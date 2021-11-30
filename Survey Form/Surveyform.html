@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BloodDonationSurvey</title>
+    <link rel="stylesheet" href="Surveyform.css" />
+  </head>
+  
+  <body>
+   
+    <h1 id="title">Blood Donation Survey</h1>
+   
+      <p id="description">
+        This survey is taken to evaluate if you were elgible for blood donation. Datas
+        received will be kept confidential!
+      </p>
+     
+     
+      <form id="survey-form" action="#">
+        <ul>
+          <li>
+        <label for="name" id="name-label">
+          Name :
+          <input
+            id="name"
+            type="text"
+            placeholder="your name"
+            name="name"
+            required
+          /> </label>
+        </li>
+        <li>
+        <label for="email" id="email-label">
+          Email :
+          <input
+            type="email"
+            placeholder="@gmail.com"
+            id="email"
+            name="email"
+            required
+          /> </label>
+        </li>
+        <li>
+        <label for="number" id="number-label">
+          Nos of prior blood donation (plz skip if you aren't donated before) :
+          <input
+            type="number"
+            placeholder="nos"
+            id="number"
+            name="number"
+            max="60"
+            min="1"
+          />
+        </label>
+      </li>
+      <li>
+        <label for="dropdown" id="dropdown-label">
+          Blood-type:
+          <select id="dropdown" name="dropdown">
+            <option value="Select">Select</option
+            <option value="A-">A-</option>
+            <option value="A+">A+</option>
+            <option value="O-">O-</option>
+            <option value="O+">O+</option>
+          </select>
+        </label>
+      </li>
+      <li>
+        <div id="gender">
+          <span class="txt">Gender?</span>
+          <label for="male">
+            <input type="radio" id="male" name="gender" value="male" />
+          Male 
+          </label>
+          <label for="female">
+            <input type="radio" id="female" name="gender" value="female" />
+            Female
+          </label>
+          <label for="none">
+            <input type="radio" id="none" name="gender" value="none" />
+            Prefer Not to say
+          </label>
+        </div>
+      </li>
+      <li>
+     
+        <div id="conditions">
+          <span class="txt">Your health conditions</span>
+          <label for="diabetes">
+            <input
+              type="checkbox"
+              id="diabetes"
+              name="conditions"
+              value="diabetes"
+            />
+            Have diabetes
+          </label>
+          <label for="tatto">
+            <input type="checkbox" id="tatto" name="conditions" value="tatto" />
+            Have tattos in last 6 months
+          </label>
+          <label for="antibiotic">
+            <input
+              type="checkbox"
+              id="antibiotic"
+              name="conditions"
+              value="antibiotic"
+            />
+            On antibiotics
+          </label>
+          <label for="good">
+            <input
+              type="checkbox"
+              id="good"
+              name="conditions"
+              value="good"
+            />
+           Good
+          </label>
+        </div>
+      </li>
+      <li>
+        <div id="text-area">
+          <label for="AboutU">More about you : </label>
+          <textarea id="AboutU" name="AboutU" rows="4" cols="50"> </textarea>
+        </div>
+      </li>
+      </ul>
+        <button id="submit" type="submit">Submit</button>
+      </form>
+    
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
