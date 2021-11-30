@@ -1,0 +1,99 @@
+/*
+SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+Main Color: #222
+Grey Color: #343a40
+
+
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#main {
+  font-family: sans-serif;
+  color: #343a40;
+  background-color: #ebebec;
+}
+
+#title {
+  color: #ffffff;
+  font-size: 36px;
+  font-style: italic;
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+#img-div {
+  width: 18rem;
+
+  text-align: center;
+}
+
+#image {
+  margin-bottom: 8px;
+  max-width: 100%;
+  display: block;
+}
+
+#img-caption {
+  font-style: italic;
+  font-weight: bold;
+  color: #b45309;
+  font-size: 10px;
+}
+
+#header-page {
+  height: 55vh;
+  background-color: #222;
+}
+
+#info-page {
+  padding-top: 128px;
+  height: 45vh;
+  /* background-color: #d6d8d9; */
+}
+
+#header-tribute {
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+}
+
+#info-page {
+  width: 600px;
+  margin: 0 auto;
+
+  /* margin-bottom: 32px; */
+}
+
+#tribute-info {
+  line-height: 1.5;
+  margin-bottom: 16px;
+}
+
+#tribute-link {
+  display: inline-block;
+  margin-bottom: 32px;
+}
+
+#tribute-link:link,
+#tribute-link:visited {
+  padding: 12px;
+  background-color: #b45309;
+  border-radius: 200px;
+  text-decoration: none;
+  color: #ebebec;
+}
+
+#tribute-link:hover,
+#tribute-link:active {
+  background-color: #f59e0b;
+}
